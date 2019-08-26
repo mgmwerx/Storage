@@ -1,4 +1,4 @@
-create table Locations(id serial, name varchar(50), street_address varchar(60) not null, second_line varchar(20), city varchar(15) not null, state varchar(2) not null, zip integer not null, primary key (id), unique (street_address, city, state, zip), unique(street_address, city, state, zip, name, second_line), CONSTRAINT zip_integrity check (zip > 9999)); 
+create table Locations(id serial, name varchar(50) default 'None', street_address varchar(60) not null, second_line varchar(20) default 'None', city varchar(15) not null, state varchar(2) not null, zip integer not null, primary key (id), unique (street_address, city, state, zip, name, second_line), CONSTRAINT zip_integrity check (zip > 9999)); 
 
 --create table Source(url varchar(500), primary key (url));
 
