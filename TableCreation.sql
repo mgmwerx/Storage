@@ -2,6 +2,14 @@
 
 As the tables grow, consider adding indexes. Initial thoughts are on events.start_date and events.location_id. This will allow for faster searches for locations and date ranges. 
 
+Use this one for querying events at a specific location(s)
+create index event_locs on events (location_id);
+
+
+Use this(changing the number at the end) to create an index of each month)
+create index events_jan on events(start_date) where extract(month from start_date) = 1;--I'm not 100% sure this works so I conly created one.
+
+
 */
 
 
