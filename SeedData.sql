@@ -35,7 +35,7 @@ INSERT INTO Events (title, location_id, start_date, end_date, start_time, end_ti
 INSERT INTO Events (title, location_id, start_date, end_date, start_time, end_time, description, website_url, upload_time) values 
 ('Comicon',4,CURRENT_DATE,CURRENT_DATE,CURRENT_TIME,(CURRENT_TIME + interval '1'),'Get your geek on','www.google.com/Events&ID=11',CURRENT_TIMESTAMP);
 INSERT INTO Events (title, location_id, start_date, end_date, start_time, end_time, description, website_url, upload_time) values 
-('Another fun thing',5,CURRENT_DATE,CURRENT_DATE,CURRENT_TIME,(CURRENT_TIME + interval '1'),,'www.eventbrite.com/Events&ID=12',CURRENT_TIMESTAMP);
+('Another fun thing',5,CURRENT_DATE,CURRENT_DATE,CURRENT_TIME,(CURRENT_TIME + interval '1'),'www.eventbrite.com/Events&ID=12',CURRENT_TIMESTAMP);
 INSERT INTO Events (title, location_id, start_date, end_date, start_time, end_time, description, website_url, upload_time) values 
 ('Closing Ceremony',6,CURRENT_DATE,CURRENT_DATE,CURRENT_TIME,(CURRENT_TIME + interval '1'),'Remarks from the boss','www.eventbrite.com/Events&ID=13',CURRENT_TIMESTAMP);
 
